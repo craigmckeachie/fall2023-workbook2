@@ -3,6 +3,7 @@
 var a = 1;
 var b = 2;
 var c = 3;
+var lowest;
 
 if (a < b && a < c) {
   console.log("min a: " + a);
