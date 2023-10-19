@@ -3,15 +3,16 @@
 var payRate = 25;
 var hoursWorked = 40;
 var grossPay = 0;
+var standardHours = 40;
 
-if (hoursWorked <= 40) {
+if (hoursWorked <= standardHours) {
   grossPay = payRate * hoursWorked;
 } else {
-  var overtimeHoursWorked = hoursWorked - 40;
+  var overtimeHoursWorked = hoursWorked - standardHours;
   var overtimePayRate = payRate * 1.5;
-  regularPay = payRate * 40;
+  var standardPay = payRate * standardHours;
   overtimePay = overtimeHoursWorked * overtimePayRate;
-  grossPay = regularPay + overtimePay;
+  grossPay = standardPay + overtimePay;
 }
 
 console.log(grossPay.toFixed(2));
