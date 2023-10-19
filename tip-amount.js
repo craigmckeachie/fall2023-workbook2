@@ -1,3 +1,5 @@
+"use strict";
+
 var costOfFood = 0;
 var app = 9;
 var entree = 19;
@@ -8,4 +10,5 @@ var tipPercentage = 20;
 costOfFood = app + entree + drink + dessert;
 var tipAmount = costOfFood * (tipPercentage / 100);
 
-console.log("The tip on " + costOfFood + " food bill is " + tipAmount + ".");
+console.log("The tip on " + costOfFood + " food bill is " + tipAmount + " . ");
+
