@@ -1,7 +1,5 @@
 "use strict";
 
-var result = condition ? "do this if true": "do this if false"
-
 var payRate = 25;
 var hoursWorked = 40;
 var grossPay = 0;
