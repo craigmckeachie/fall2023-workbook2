@@ -6,13 +6,12 @@
     <title>Greeter</title>
 </head>
 <body>
-    <input type="text">
+    <!-- <input type="text"> -->
     <button onclick="greet();">Greet</button>
     <p id="messageParagraph"></p>
     <script>
         function greet() {
-            const messageParagraph = document.getElementById("messageParagraph");
-            console.log(messageParagraph);
+            var messageParagraph = document.getElementById("messageParagraph");
             messageParagraph.innerText = "Hello";
         }
 
