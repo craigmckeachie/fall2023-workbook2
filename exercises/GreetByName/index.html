@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greet By Name</title>
+  </head>
+  <body>
+    <main>
+      <p>
+        Name
+        <input type="text" id="nameField" />
+      </p>
+      <p>
+        <input id="greetBtn" onclick="greet();" type="button" value="Greet the User" />
+      </p>
+    </main>
+    <script>
+      function greet() {
+        const nameInput = document.getElementById("nameField");
+        let name = nameInput.value;
+        window.alert(`Hello ${name}`);
+      }
+    </script>
+  </body>
+</html>
