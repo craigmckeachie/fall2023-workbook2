@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 20rem;
+      }
+      .button-group{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      button{
+        padding-inline: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form>
+        <label for="number1Input">Number 1</label>
+        <input id="number1Input" type="text" />
+
+        <label for="number2Input">Number 2</label>
+        <input id="number2Input" type="text" />
+
+        <div class="button-group">
+          <button>Add</button>
+          <button>Subtract</button>
+          <button>Multiply</button>
+          <button>Divide</button>
+        </div>
+        
+        <label for="answerInput">Answer</label>
+        <input id="answerInput" type="text" readonly>
+      </form>
+    </main>
+  </body>
+</html>
