@@ -35,15 +35,35 @@
         <input id="number2Input" type="text" />
 
         <div class="button-group">
-          <button>Add</button>
-          <button>Subtract</button>
-          <button>Multiply</button>
-          <button>Divide</button>
+          <button type="button" onclick="onAddButtonClicked();">Add</button>
+          <button type="button"  onclick="onSubtractButtonClicked();">Subtract</button>
+          <button type="button">Multiply</button>
+          <button type="button">Divide</button>
         </div>
-        
+
         <label for="answerInput">Answer</label>
         <input id="answerInput" type="text" readonly>
       </form>
     </main>
+    <script>
+        const answerInput = document.getElementById("answerInput");
+
+          // let number1Input = document.getElementById("number1Input");
+            // let number1AsString = numberInput.value;
+            // let number1 = Number(numberAsString);
+        function onAddButtonClicked() {
+            let number1 = Number(document.getElementById("number1Input").value);
+            let number2 = Number(document.getElementById("number2Input").value);
+            let answer = number1 + number2;
+            answerInput.value = answer;
+        }
+
+        function onSubtractButtonClicked() {
+            let number1 = Number(document.getElementById("number1Input").value);
+            let number2 = Number(document.getElementById("number2Input").value);
+            let answer = number1 - number2;
+            answerInput.value = answer;
+        }
+    </script>
   </body>
 </html>
